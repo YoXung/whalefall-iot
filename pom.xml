@@ -24,13 +24,15 @@
         <module>whale-fall-iot-bap</module>
         <module>whale-fall-iot-cmp</module>
         <module>whale-fall-iot-dmp</module>
+        <module>whale-fall-iot-acp</module>
+        <module>whale-fall-iot-sso</module>
     </modules>
 
     <dependencies>
-        <dependency>
+<!--        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-task</artifactId>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>org.projectlombok</groupId>
