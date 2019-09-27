@@ -9,7 +9,6 @@
     </parent>
 
     <artifactId>whale-fall-iot-sso</artifactId>
-<!--    <version>0.0.1-SNAPSHOT</version>-->
     <packaging>war</packaging>
     <name>Whale Fall IoT SSO</name>
     <description>管理端单点登陆</description>
@@ -44,27 +43,13 @@
         </dependency>
     </dependencies>
 
-<!--
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
--->
-
-    <build>
+<!--    <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 
 </project>
