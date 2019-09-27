@@ -16,3 +16,7 @@
 * *EMQ X*
 
     EMQ X是一个使用Erlang编写的MQTT Broker，物联网平台使用EMQ X来实现MQTT/CoAP协议接入，并使用EMQ X的一些高级功能来简化和加速开发。[传送门](https://docs.emqx.io/broker/v3/cn/)
+
+* *Node.js*
+
+    Node.js是一个基于 Chrome V8 引擎的 JavaScript 运行环境，我们会使用 Node.js 来开发物联网平台的主要功能。[传送门](https://nodejs.org/en/download/)
