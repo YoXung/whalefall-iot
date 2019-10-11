@@ -27,6 +27,7 @@
         <module>whale-fall-iot-dmp</module>
         <module>whale-fall-iot-acp</module>
         <module>whale-fall-iot-sso</module>
+        <module>whale-fall-iot-cig</module>
     </modules>
 
     <dependencies>
