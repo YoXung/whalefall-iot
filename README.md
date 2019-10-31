@@ -1,3 +1,5 @@
+![logo](IoT-logo.png "logo") 
+
 # Whale Fall IoT
 
 ### 安装依赖软件
@@ -20,3 +22,9 @@
 * *Node.js*
 
     Node.js是一个基于 Chrome V8 引擎的 JavaScript 运行环境，我们会使用 Node.js 来开发物联网平台的主要功能。[传送门](https://nodejs.org/en/download/)
+    
+### 逻辑架构图
+![logic](IoT-logic.png "logic") 
+
+### DevOps架构图
+![devops](IoT-devops.png "devops") 
