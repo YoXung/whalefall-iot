@@ -28,3 +28,22 @@
 
 ### DevOps架构图
 ![devops](image/IoT-devops.png "devops") 
+
+### 工程结构
+```
+whale-fall-iot //IoT父工程
+|
+├── whale-fall-iot-acp //应用中心平台
+|
+├── whale-fall-iot-aep //应用使能平台
+|
+├── whale-fall-iot-bap //业务分析平台
+|
+├── whale-fall-iot-cig //边缘网关
+|
+├── whale-fall-iot-cmp //连接管理平台
+|
+├── whale-fall-iot-dmp //设备管理平台
+|
+├── whale-fall-iot-sso //单点登录
+```
