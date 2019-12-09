@@ -1,7 +1,7 @@
 ![logo](image/IoT-logo.png "logo") 
 
 # Whale Fall IoT
-![](https://img.shields.io/badge/support-java-orange)
+[![](https://img.shields.io/badge/support-java-orange)](https://github.com/YoXung/whale-fall-iot.git)
 
 ### 安装依赖软件
 * *MongoDB*
