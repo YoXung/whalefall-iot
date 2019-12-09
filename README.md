@@ -1,6 +1,7 @@
 ![logo](image/IoT-logo.png "logo") 
 
 # Whale Fall IoT
+![](https://img.shields.io/badge/support-java-orange)
 
 ### 安装依赖软件
 * *MongoDB*
