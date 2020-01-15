@@ -11,7 +11,7 @@
     <artifactId>whale-fall-iot-cig</artifactId>
     <packaging>war</packaging>
     <name>Whale Fall IoT CIG</name>
-    <description>鉴权：Cloud Internet Gateway</description>
+    <description>物联网云网关：Cloud Internet Gateway</description>
 
     <dependencies>
         <dependency>
