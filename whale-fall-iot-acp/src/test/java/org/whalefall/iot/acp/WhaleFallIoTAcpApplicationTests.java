@@ -1,4 +1,4 @@
-package org.whalefall.io.acp;
+package org.whalefall.iot.acp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

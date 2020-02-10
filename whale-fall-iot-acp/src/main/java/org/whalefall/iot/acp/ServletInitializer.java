@@ -1,4 +1,4 @@
-package org.whalefall.io.acp;
+package org.whalefall.iot.acp;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
