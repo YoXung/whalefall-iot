@@ -9,7 +9,6 @@
 	</parent>
 
 	<artifactId>whale-fall-iot-cmp</artifactId>
-	<packaging>war</packaging>
 	<name>Whale Fall IoT CMP</name>
 	<description>
 		连接管理平台（Connectivity Management Platform）
@@ -29,20 +28,10 @@
 			<groupId>com.alibaba.cloud</groupId>
 			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
+		<finalName>${project.name}</finalName>
 	</build>
 
 </project>

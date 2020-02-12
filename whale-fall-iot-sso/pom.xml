@@ -9,7 +9,6 @@
     </parent>
 
     <artifactId>whale-fall-iot-sso</artifactId>
-    <packaging>war</packaging>
     <name>Whale Fall IoT SSO</name>
     <description>管理端单点登陆</description>
 
@@ -38,11 +37,6 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 

@@ -9,7 +9,6 @@
     </parent>
 
     <artifactId>whale-fall-iot-portal</artifactId>
-    <packaging>war</packaging>
     <name>Whale Fall IoT Portal</name>
     <description>前端聚合服务</description>
 
@@ -18,7 +17,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
     </dependencies>
 
     <build>

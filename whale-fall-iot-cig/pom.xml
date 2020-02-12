@@ -9,7 +9,6 @@
     </parent>
 
     <artifactId>whale-fall-iot-cig</artifactId>
-    <packaging>war</packaging>
     <name>Whale Fall IoT CIG</name>
     <description>物联网云网关：Cloud Internet Gateway</description>
 
@@ -26,20 +25,10 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+        <finalName>${project.name}</finalName>
     </build>
 
 </project>

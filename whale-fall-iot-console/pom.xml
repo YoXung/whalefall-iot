@@ -9,7 +9,6 @@
     </parent>
 
     <artifactId>whale-fall-iot-console</artifactId>
-    <packaging>war</packaging>
     <name>Whale Fall IoT Console</name>
     <description>平台管理前端</description>
 
