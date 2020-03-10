@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.4.RELEASE</version>
+        <version>2.2.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.whalefall.iot</groupId>
@@ -18,21 +18,24 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
-        <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
-        <docker.maven.plugin.version>1.1.0</docker.maven.plugin.version>
+        <spring-cloud.version>Hoxton.SR2</spring-cloud.version>
+        <docker.plugin.version>0.33.0</docker.plugin.version>
+        <docker.host>http://IP:2375</docker.host>
+        <docker.registry>IP</docker.registry>
+        <docker.namespace>library</docker.namespace>
+        <docker.username>admin</docker.username>
+        <docker.password>12345</docker.password>
     </properties>
 
     <modules>
         <module>whale-fall-iot-framework</module>
-
         <module>whale-fall-iot-aep</module>
         <module>whale-fall-iot-bap</module>
         <module>whale-fall-iot-cmp</module>
         <module>whale-fall-iot-dmp</module>
         <module>whale-fall-iot-acp</module>
-        <module>whale-fall-iot-sso</module>
+        <module>whale-fall-iot-upms</module>
         <module>whale-fall-iot-cig</module>
-
         <module>whale-fall-iot-portal</module>
         <module>whale-fall-iot-console</module>
     </modules>
@@ -93,6 +96,33 @@
 <!--                    <skipTests>true</skipTests>-->
 <!--                </configuration>-->
 <!--            </plugin>-->
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker.plugin.version}</version>
+                <configuration>
+                    <!-- Docker Remote Api-->
+                    <dockerHost>${docker.host}</dockerHost>
+                    <!-- Docker 镜像私服-->
+                    <registry>${docker.registry}</registry>
+                    <!-- 认证信息-->
+                    <authConfig>
+                        <push>
+                            <username>${docker.username}</username>
+                            <password>${docker.password}</password>
+                        </push>
+                    </authConfig>
+                    <images>
+                        <image>
+                            <!-- 镜像名称： 172.17.0.111/library/pig-gateway:2.6.3-->
+                            <name>${docker.registry}/${docker.namespace}/${project.name}:${project.version}</name>
+                            <build>
+                                <dockerFile>${project.basedir}/Dockerfile</dockerFile>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
