@@ -46,7 +46,7 @@ whale-fall-iot //IoT父工程
 |
 ├── whale-fall-iot-dmp //设备管理平台
 |
-├── whale-fall-iot-sso //用户单点登录
+├── whale-fall-iot-upms //用户权限管理系统
 |
 ├── whale-fall-iot-framework //工程通用框架
 |
