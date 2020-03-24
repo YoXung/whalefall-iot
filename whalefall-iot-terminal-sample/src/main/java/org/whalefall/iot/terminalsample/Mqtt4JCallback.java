@@ -11,7 +11,7 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
  * @description
  * @create 2020/3/24 3:15 下午
  */
-public class OnMessageCallback implements MqttCallback {
+public class Mqtt4JCallback implements MqttCallback {
     public void connectionLost(Throwable cause) {
         // 连接丢失后，一般在这里面进行重连
         System.out.println("连接断开，可以做重连");
