@@ -32,26 +32,28 @@
 
 ### 工程结构
 ```
-whale-fall-iot //IoT父工程
+whalefall-iot //IoT父工程
 |
-├── whale-fall-iot-acp //应用中心平台
+├── whalefall-iot-acp //应用中心平台
 |
-├── whale-fall-iot-aep //应用使能平台
+├── whalefall-iot-aep //应用使能平台
 |
-├── whale-fall-iot-bap //业务分析平台
+├── whalefall-iot-bap //业务分析平台
 |
-├── whale-fall-iot-cig //边缘网关
+├── whalefall-iot-cig //边缘网关
 |
-├── whale-fall-iot-cmp //连接管理平台
+├── whalefall-iot-cmp //连接管理平台
 |
-├── whale-fall-iot-dmp //设备管理平台
+├── whalefall-iot-dmp //设备管理平台
 |
-├── whale-fall-iot-upms //用户权限管理系统
+├── whalefall-iot-upms //用户权限管理系统
 |
-├── whale-fall-iot-framework //工程通用框架
+├── whalefall-iot-framework //工程通用框架
 |
-├── whale-fall-iot-portal   //平台用户操作前端
+├── whalefall-iot-portal   //平台用户操作前端
 |
-├── whale-fall-iot-console  //平台管理前端
+├── whalefall-iot-console  //平台管理前端
+|
+├── whalefall-iot-terminal-sample  //终端模拟案例
 
 ```
