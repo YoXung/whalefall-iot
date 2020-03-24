@@ -4,18 +4,19 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.whalefall.iot</groupId>
-        <artifactId>whale-fall-iot</artifactId>
+        <artifactId>whalefall-iot</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>whale-fall-iot-aep</artifactId>
-    <name>Whale Fall IoT AEP</name>
-    <description>
-        应用使能平台（Application Enablement Platform）
-        功能：提供开发和统一数据存储存储，快速开发、部署应用
-    </description>
+    <artifactId>whalefall-iot-cig</artifactId>
+    <name>Whale Fall IoT CIG</name>
+    <description>物联网云网关：Cloud Internet Gateway</description>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>

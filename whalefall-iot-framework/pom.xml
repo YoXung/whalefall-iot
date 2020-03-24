@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.whalefall.iot</groupId>
-        <artifactId>whale-fall-iot</artifactId>
+        <artifactId>whalefall-iot</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>whale-fall-iot-console</artifactId>
-    <name>Whale Fall IoT Console</name>
-    <description>平台管理前端</description>
+    <artifactId>whalefall-iot-framework</artifactId>
+    <name>Whale Fall IoT Framework</name>
+    <description>Framework for Whale Fall IoT project</description>
 
     <dependencies>
 

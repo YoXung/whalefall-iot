@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>org.whalefall.iot</groupId>
-    <artifactId>whale-fall-iot</artifactId>
+    <artifactId>whalefall-iot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Whale Fall IoT</name>
@@ -29,16 +29,16 @@
     </properties>
 
     <modules>
-        <module>whale-fall-iot-framework</module>
-        <module>whale-fall-iot-aep</module>
-        <module>whale-fall-iot-bap</module>
-        <module>whale-fall-iot-cmp</module>
-        <module>whale-fall-iot-dmp</module>
-        <module>whale-fall-iot-acp</module>
-        <module>whale-fall-iot-upms</module>
-        <module>whale-fall-iot-cig</module>
-        <module>whale-fall-iot-portal</module>
-        <module>whale-fall-iot-console</module>
+        <module>whalefall-iot-framework</module>
+        <module>whalefall-iot-aep</module>
+        <module>whalefall-iot-bap</module>
+        <module>whalefall-iot-cmp</module>
+        <module>whalefall-iot-dmp</module>
+        <module>whalefall-iot-acp</module>
+        <module>whalefall-iot-upms</module>
+        <module>whalefall-iot-cig</module>
+        <module>whalefall-iot-portal</module>
+        <module>whalefall-iot-console</module>
     </modules>
 
     <dependencies>

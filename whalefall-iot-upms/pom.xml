@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.whalefall.iot</groupId>
-        <artifactId>whale-fall-iot</artifactId>
+        <artifactId>whalefall-iot</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>whale-fall-iot-upms</artifactId>
+    <artifactId>whalefall-iot-upms</artifactId>
     <name>Whale Fall IoT UPMS</name>
     <description>通用用户权限管理系统（User Permissions Management System）</description>
 

@@ -4,22 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.whalefall.iot</groupId>
-        <artifactId>whale-fall-iot</artifactId>
+        <artifactId>whalefall-iot</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>whale-fall-iot-bap</artifactId>
-    <name>Whale Fall IoT BAP</name>
-    <description>
-        业务分析平台（Business Analytics Platform）
-        功能：包含基础大数据分析和机器学
-    </description>
+    <artifactId>whalefall-iot-console</artifactId>
+    <name>Whale Fall IoT Console</name>
+    <description>平台管理前端</description>
 
     <dependencies>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
+
     </dependencies>
 
     <build>
