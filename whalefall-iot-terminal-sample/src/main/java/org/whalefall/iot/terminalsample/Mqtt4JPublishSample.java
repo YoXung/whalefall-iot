@@ -13,49 +13,40 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
  * @description
  * @create 2020/3/24 5:01 下午
  */
-public class Mqtt4J {
+public class Mqtt4JPublishSample {
     public static void main(String[] args) {
-        String subTopic = "testtopic/#";
-        String pubTopic = "testtopic/1";
-        String content = "这是一条发布的数据";
-        int qos = 2;
+        String topic = "mqtt/iottest";
+        String content = "hello 哈哈";
+        int qos = 1;
         String broker = "tcp://127.0.0.1:1883";
-        String clientId = "emqx_test";
+        String userName = "wfiot";
+        String password = "wfiot";
+        String clientId = "pubClient";
+        // 内存存储
         MemoryPersistence persistence = new MemoryPersistence();
 
         try {
-            MqttClient client = new MqttClient(broker, clientId, persistence);
-
-            // MQTT 连接选项
+            // 创建客户端
+            MqttClient sampleClient = new MqttClient(broker, clientId, persistence);
+            // 创建链接参数
             MqttConnectOptions connOpts = new MqttConnectOptions();
-            //connOpts.setUserName("emqx_test");
-            //connOpts.setPassword("emqx_test_password".toCharArray());
-            // 保留会话
-            connOpts.setCleanSession(true);
-
-            // 设置回调
-            client.setCallback(new Mqtt4JCallback());
-
+            // 在重新启动和重新连接时记住状态
+            connOpts.setCleanSession(false);
+            // 设置连接的用户名
+            connOpts.setUserName(userName);
+            connOpts.setPassword(password.toCharArray());
             // 建立连接
-            System.out.println("Connecting to broker: " + broker);
-            client.connect(connOpts);
-
-            System.out.println("Connected");
-            System.out.println("Publishing message: " + content);
-
-            // 订阅
-            client.subscribe(subTopic);
-
-            // 消息发布所需参数
+            sampleClient.connect(connOpts);
+            // 创建消息
             MqttMessage message = new MqttMessage(content.getBytes());
+            // 设置消息的服务质量
             message.setQos(qos);
-            client.publish(pubTopic, message);
-            System.out.println("Message published");
-
-            client.disconnect();
-            System.out.println("Disconnected");
-            client.close();
-            System.exit(0);
+            // 发布消息
+            sampleClient.publish(topic, message);
+            // 断开连接
+            sampleClient.disconnect();
+            // 关闭客户端
+            sampleClient.close();
         } catch (MqttException me) {
             System.out.println("reason " + me.getReasonCode());
             System.out.println("msg " + me.getMessage());
