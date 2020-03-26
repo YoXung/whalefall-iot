@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.whalefall.iot</groupId>
+        <artifactId>whalefall-iot</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>whalefall-iot-common</artifactId>
+    <name>whalefall-iot-common</name>
+    <description>通用组件</description>
+
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.name}</finalName>
+    </build>
+
+</project>

@@ -30,6 +30,7 @@
 
     <modules>
         <module>whalefall-iot-framework</module>
+        <module>whalefall-iot-common</module>
         <module>whalefall-iot-aep</module>
         <module>whalefall-iot-bap</module>
         <module>whalefall-iot-cmp</module>

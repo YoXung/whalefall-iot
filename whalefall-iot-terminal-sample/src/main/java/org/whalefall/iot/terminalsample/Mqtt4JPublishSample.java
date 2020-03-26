@@ -1,9 +1,6 @@
 package org.whalefall.iot.terminalsample;
 
-import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 /**
@@ -27,7 +24,8 @@ public class Mqtt4JPublishSample {
 
         try {
             // 创建客户端
-            MqttClient sampleClient = new MqttClient(broker, clientId, persistence);
+            MqttClient pubClient = new MqttClient(broker, clientId, persistence);
+            //MqttAsyncClient pubClient = new MqttAsyncClient(broker, clientId, persistence);
             // 创建链接参数
             MqttConnectOptions connOpts = new MqttConnectOptions();
             // 在重新启动和重新连接时记住状态
@@ -36,17 +34,17 @@ public class Mqtt4JPublishSample {
             connOpts.setUserName(userName);
             connOpts.setPassword(password.toCharArray());
             // 建立连接
-            sampleClient.connect(connOpts);
+            pubClient.connect(connOpts);
             // 创建消息
             MqttMessage message = new MqttMessage(content.getBytes());
             // 设置消息的服务质量
             message.setQos(qos);
             // 发布消息
-            sampleClient.publish(topic, message);
+            pubClient.publish(topic, message);
             // 断开连接
-            sampleClient.disconnect();
+            pubClient.disconnect();
             // 关闭客户端
-            sampleClient.close();
+            pubClient.close();
         } catch (MqttException me) {
             System.out.println("reason " + me.getReasonCode());
             System.out.println("msg " + me.getMessage());
