@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>whalefall-iot-acp</artifactId>
-    <name>Whale Fall IoT ACP</name>
+    <name>whalefall-iot-acp</name>
     <description>应用中心平台（Application Center Platform）</description>
 
     <dependencies>

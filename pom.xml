@@ -38,16 +38,12 @@
         <module>whalefall-iot-acp</module>
         <module>whalefall-iot-upms</module>
         <module>whalefall-iot-cig</module>
-        <module>whalefall-iot-portal</module>
-        <module>whalefall-iot-console</module>
+        <module>whalefall-iot-bff-portal</module>
+        <module>whalefall-iot-bff-console</module>
         <module>whalefall-iot-terminal-sample</module>
     </modules>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

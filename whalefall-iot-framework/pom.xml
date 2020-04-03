@@ -9,11 +9,14 @@
     </parent>
 
     <artifactId>whalefall-iot-framework</artifactId>
-    <name>Whale Fall IoT Framework</name>
+    <name>whalefall-iot-framework</name>
     <description>Framework for Whale Fall IoT project</description>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

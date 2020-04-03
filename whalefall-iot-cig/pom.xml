@@ -9,8 +9,11 @@
     </parent>
 
     <artifactId>whalefall-iot-cig</artifactId>
-    <name>Whale Fall IoT CIG</name>
-    <description>物联网云网关：Cloud Internet Gateway</description>
+    <name>whalefall-iot-cig</name>
+    <description>
+        物联网云网关：Cloud Internet Gateway
+        设备接入鉴权
+    </description>
 
     <dependencies>
         <dependency>

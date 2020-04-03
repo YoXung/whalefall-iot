@@ -8,18 +8,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>whalefall-iot-bap</artifactId>
-    <name>whalefall-iot-bap</name>
-    <description>
-        业务分析平台（Business Analytics Platform）
-        功能：包含基础大数据分析和机器学习模型
-    </description>
+    <artifactId>whalefall-iot-bff-portal</artifactId>
+    <name>whalefall-iot-bff-portal</name>
+    <description>BFF:Backend For Frontend,前端聚合服务</description>
 
     <dependencies>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
+
     </dependencies>
 
     <build>

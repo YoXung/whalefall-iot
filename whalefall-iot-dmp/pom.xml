@@ -9,7 +9,7 @@
 	</parent>
 
 	<artifactId>whalefall-iot-dmp</artifactId>
-	<name>Whale Fall IoT DMP</name>
+	<name>whalefall-iot-dmp</name>
 	<description>
 		设备管理平台（Device Management Platform）
 		功能：

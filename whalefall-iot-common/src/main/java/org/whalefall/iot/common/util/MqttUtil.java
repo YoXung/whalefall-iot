@@ -25,6 +25,7 @@ public class MqttUtil {
     @Getter
     private MqttClient mqttClient;
     private String topic;
+    private int qos = 1;
     private String username;
     private String password;
     private String content;
@@ -72,15 +73,22 @@ public class MqttUtil {
         }
     }
 
-    public void publish(String topic, String content) throws MqttPersistenceException {
+    public void publish(String topic, String content) throws MqttException, MqttPersistenceException {
         MqttMessage mqttMessage = new MqttMessage();
+        mqttMessage.setQos(qos);
+        // mqtt服务器保留消息
+        mqttMessage.setRetained(true);
         mqttMessage.setPayload(content.getBytes());
         try {
             mqttClient.publish(topic, mqttMessage);
-            mqttClient.disconnect();
-            mqttClient.close();
+
         } catch (MqttException me) {
             me.printStackTrace();
+        } finally {
+            if (mqttClient != null) {
+                mqttClient.disconnect();
+                mqttClient.close();
+            }
         }
     }
 

@@ -9,7 +9,7 @@
 	</parent>
 
 	<artifactId>whalefall-iot-cmp</artifactId>
-	<name>Whale Fall IoT CMP</name>
+	<name>whalefall-iot-cmp</name>
 	<description>
 		连接管理平台（Connectivity Management Platform）
 		应用于运营商网络上 ，实现对物联网连接配置和故障管理。

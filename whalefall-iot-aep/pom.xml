@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>whalefall-iot-aep</artifactId>
-    <name>Whale Fall IoT AEP</name>
+    <name>whalefall-iot-aep</name>
     <description>
         应用使能平台（Application Enablement Platform）
         功能：提供开发和统一数据存储存储，快速开发、部署应用

@@ -30,6 +30,19 @@
 ### DevOps架构图
 ![devops](image/IoT-devops.png "devops") 
 
+### DDD工程划分依据
+![DDD四层架构](image/DDD-4layor.jpg "DDD-4layor")
+
+![DDD数据转换](image/DDD-DTO.png "DDD-DTO")
+
+![DDD企业级中台架构](image/DDD-MiddlePlatform-MSA.png "DDD-MiddlePlaform-MSA")
+
+![DDD SpringCloud架构](image/DDD-MSA.png "DDD-MSA")
+
+![DDD 生产者提供者模式](image/con-pro.png "con-pro")
+
+![CQRS架构](image/cqrs.png "CQRS")
+
 ### 工程结构
 ```
 whalefall-iot //IoT父工程
@@ -50,9 +63,11 @@ whalefall-iot //IoT父工程
 |
 ├── whalefall-iot-framework //工程通用框架
 |
-├── whalefall-iot-portal   //平台用户操作前端
+├── whalefall-iot-common //工程通用组件
 |
-├── whalefall-iot-console  //平台管理前端
+├── whalefall-iot-bff-portal   //BFF平台用户操作前端
+|
+├── whalefall-iot-bff-console  //BFF平台管理前端
 |
 ├── whalefall-iot-terminal-sample  //终端模拟案例
 
